@@ -1,6 +1,6 @@
 # AzureSignTool PowerShell Signing Scripts
 
-These PowerShell scripts are used for signing files with AzureSignTool and a, in our case HSM-backed, certificate in Azure Key Vault. For our use case we acquired an EVCS cert from SSLTrust.com and followed their guides which [can be found here](https://www.ssltrust.com.au/help/setup-guides/code-signing-on-azure-key-vault-with-signtool).
+These PowerShell scripts are used for easily signing files with AzureSignTool and a, in our case HSM-backed, certificate in Azure Key Vault. For our use case we acquired an EVCS cert from SSLTrust.com and followed their guides to setup our certificate, which [can be found here](https://www.ssltrust.com.au/help/setup-guides/code-signing-on-azure-key-vault-with-signtool).
 
 ## Script Versions & Authentication Methods
 
