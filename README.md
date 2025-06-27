@@ -30,6 +30,7 @@ This repository currently provides two script versions for different authenticat
 - For `AST-SecretBased.ps1`: Microsoft Entra ID Application with a generated Client Secret
 - For `AST-Interactive.ps1`: [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) (install via WinGet: `winget install --exact --id Microsoft.AzureCLI`)
 
+
 ## Usage
 
 ### **1. `AST-SecretBased.ps1` (Client Secret)**
@@ -61,6 +62,7 @@ Pass one or more file paths directly using the `-FilePath` parameter:
 - The script will skip the GUI and confirmation prompt, and sign the specified files directly.
 - If any file is not found, the script will exit and not sign any files.
 
+
 ### **2. `AST-Interactive.ps1` (Azure CLI)**
 
 #### Replace Placeholder Values:
@@ -79,12 +81,8 @@ Run the script without parameters to select files using a file dialog:
 - Review the list and confirm to proceed with signing.
 
 ### Automated/Scripted Mode
-Pass one or more file paths directly using the `-FilePath` parameter:
-```powershell
-.\AST-Interactive.ps1 -FilePath "C:\Path\To\File1.exe","C:\Path\To\File2.dll"
-```
-- The script will skip the GUI and confirmation prompt, and sign the specified files directly.
-- If any file is not found, the script will exit and not sign any files.
+Same as above.
+
 
 ## Security
 - For `AST-SecretBased.ps1`, the Azure client secret is stored securely in Windows Credential Manager and never written to disk in plain text. The secret must be exactly 40 characters long. The script will show a preview of the first 5 characters of the stored secret for verification.
